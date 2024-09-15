@@ -1,9 +1,12 @@
+/* General styles for the page */
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
     background-color: #f0f8ff; /* Light background color */
 }
 
+/* Style for the header */
 header {
     text-align: center;
     margin-bottom: 20px;
@@ -14,19 +17,48 @@ header {
     height: auto;
 }
 
-input[type="text"] {
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Centering the search box and button */
+.search-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center items horizontally */
+    margin: 20px;           /* Add some margin around the container */
+}
+
+#nationalID {
     padding: 10px;
-    margin-right: 10px;
+    margin-bottom: 10px; /* Space between the search box and the button */
+    width: 100%;
+    max-width: 300px; /* Limit the width of the search box */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
 }
 
 button {
     padding: 10px 15px;
+    border: none;
+    background-color: #C96868;
+    color: white;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    max-width: 300px; /* Align with the search box width */
 }
 
+button:hover {
+    background-color: #921A40;
+}
+
+/* Style for the table */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 20px auto; /* Center table horizontally */
+    max-width: 1000px; /* Optional: Set a max width for the table */
 }
 
 table, th, td {
@@ -35,17 +67,19 @@ table, th, td {
 
 th, td {
     padding: 8px;
-    text-align: left;
+    text-align: center; /* Center align text in table cells */
 }
 
 th {
     background-color: #f2f2f2;
+    font-weight: bold; /* Make headers bold */
 }
 
-/* Styling for the paragraph */
+/* Style for the footer paragraph */
 #footer-paragraph {
-    margin-top: 20px; /* Space above the paragraph */
-    font-size: 20px; /* Adjust font size */
-    color: #333; /* Darker text color */
-    text-align: center; /* Center align text */
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold
+    color: #333;
+    text-align: center;
 }
